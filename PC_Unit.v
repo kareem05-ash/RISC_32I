@@ -17,5 +17,4 @@ module pc_unit
                 .load(load) , 
                 .PC(PC) ,
                 .NextPC(NextPC));
-
 endmodule
