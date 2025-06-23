@@ -4,8 +4,7 @@ input [31:7]Instr;
 input [1:0]ImmSrc;
 output reg [31:0] ImmExt;
 
-)
-
+always
 case (ImmSrc)
 begin
     2'b00: assign ImmExt={{20Instr[31]},Instr[31:20]};
