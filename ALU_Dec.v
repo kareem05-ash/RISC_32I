@@ -1,8 +1,9 @@
 module alu_dec
 (
-    input op5 , funct7 ,
+    input op5 , 
     input [1:0] ALUOP ,
     input [2:0] funct3 ,
+    input [6:0] funct7 ,
     output reg [2:0] ALUControl
 );
     always@(*)
@@ -12,7 +13,7 @@ module alu_dec
                 1 : ALUControl = 3'b010;
                 2 : 
                     case(funct3)
-                        3'b000 : if({op5 , funct7} == 2'b11) ALUControl = 3'b010;
+                        3'b000 : if({op5 , funct7[5]} == 2'b11) ALUControl = 3'b010;
                                  else ALUControl = 3'b000;
                         3'b001 : ALUControl = 3'b001;
                         3'b100 : ALUControl = 3'b100;
