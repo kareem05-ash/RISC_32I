@@ -1,7 +1,8 @@
 module alu_dec_tb();
-    reg op5 , funct7;
+    reg op5;
     reg [1:0] ALUOP;
     reg [2:0] funct3;
+    reg [6:0] funct7;
     wire [2:0] ALUControl;
     alu_dec DUT(.op5(op5) ,
                 .funct7(funct7) ,
@@ -21,7 +22,7 @@ module alu_dec_tb();
                         else $display("Error : ALUOP = %b , ALUControl = %b" , ALUOP , ALUControl);
                     2 : 
                         case(funct3)
-                            3'b000 : if(({op5 , funct7} == 2'b11) && (ALUControl == 3'b010)) $display("Pass");
+                            3'b000 : if(({op5 , funct7[5]} == 2'b11) && (ALUControl == 3'b010)) $display("Pass");
                                      else if(ALUControl == 3'b000) $display("Pass");
                                      else $display("Error : ALUOP = %b , funct3 = %b , op5 = %d , funct7 = %d -> ALUControl = %b" 
                                                    , ALUOP , funct3 , op5 , funct7 , ALUControl);
