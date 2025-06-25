@@ -1,26 +1,25 @@
 module risc_top
 (
     input clk ,
-    input areset , 
-    input load , 
-    output [31:0] PC , 
-    output [31:0] Instr , 
-    output [31:0] Result , //WD3
-    output [31:0] ALUResult , 
-    output [31:0] Read_Data   
+    input areset
 );
     //ALU Internal Signals
     wire [31:0] A , B;
     wire [2:0] ALUControl;
-    wire Zero , Sign_Flag;
+    wire Zero , Sign_Flag , load;
+    wire [31:0] ALUResult;
     //Control Unit Internal Signals
     wire [2:0] funct3;
     wire [6:0] op , funct7;
     wire ResultSrc , MemWrite , ALUSrc , RegWrite , PCSrc;
     wire [1:0] ImmSrc;
     //Data Memory Internal Signals
-    wire WE; //the rest are already declared
-    //Instruction Memory Internal Signals are already declared
+    wire WE; 
+    wire [31:0] Read_Data;
+    wire [31:0] Result;
+    //Instruction Memory Internal Signals
+    wire [31:0] PC;
+    wire [31:0] Instr;
     //PC Unit Internal Signals
     wire [31:0] ImmExt;//The rest are already declared 
     //Register File Internal Signals
@@ -61,7 +60,7 @@ module risc_top
 
     pc_unit PCU(.clk(clk) ,  //PC Unit Instantiation 
                 .areset(areset) ,
-                .load(load) , 
+                .load(1'b1) , 
                 .PCSrc(PCSrc) , 
                 .ImmExt(ImmExt) ,
                 .PC(PC));
