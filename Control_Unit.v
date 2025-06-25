@@ -8,7 +8,7 @@ module control_unit
     output ResultSrc , MemWrite , ALUSrc , RegWrite ,
     output reg PCSrc ,
     output [2:0] ALUControl ,
-    output [1:0] ImmSrc
+    output [1:0] ImmExt
 );
     wire Branch;
     wire [1:0] ALUOP;
