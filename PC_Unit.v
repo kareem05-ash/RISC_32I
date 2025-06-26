@@ -8,11 +8,11 @@ module pc_unit
     output [31:0] PC
 );
     wire [31:0] NextPC;
-    next_pc_logic DUT0(.PC(PC) ,
+    next_pc_logic NPC(.PC(PC) ,
                        .ImmExt(ImmExt) ,
                        .PCSrc(PCSrc) , 
                        .NextPC(NextPC));
-    pc_reg DUT1(.clk(clk) , 
+    pc_reg PC(.clk(clk) , 
                 .areset(areset) ,
                 .load(load) , 
                 .PC(PC) ,
