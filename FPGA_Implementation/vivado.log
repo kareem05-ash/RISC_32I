@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jun 30 18:16:12 2025
+# Process ID: 20108
+# Current directory: F:/git-learning/RISC_32I/FPGA_Implementation
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6196 F:\git-learning\RISC_32I\FPGA_Implementation\RISC_V.xpr
+# Log file: F:/git-learning/RISC_32I/FPGA_Implementation/vivado.log
+# Journal file: F:/git-learning/RISC_32I/FPGA_Implementation\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/git-learning/RISC_32I/FPGA_Implementation/RISC_V.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/alah/Desktop/Work/Verilog_Work/Grad_Project/RISC_V' since last save.
+WARNING: [Project 1-312] File not found as 'F:/git-learning/RISC_32I/ALU.v'; using path 'C:/Users/alah/Desktop/Work/Verilog_Work/Grad_Project/ALU.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/git-learning/RISC_32I/ALU_Dec.v'; using path 'C:/Users/alah/Desktop/Work/Verilog_Work/Grad_Project/ALU_Dec.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/git-learning/RISC_32I/Control_Unit.v'; using path 'C:/Users/alah/Desktop/Work/Verilog_Work/Grad_Project/Control_Unit.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/git-learning/RISC_32I/Data_Mem.v'; using path 'C:/Users/alah/Desktop/Work/Verilog_Work/Grad_Project/Data_Mem.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/git-learning/RISC_32I/Instr_Mem.v'; using path 'C:/Users/alah/Desktop/Work/Verilog_Work/Grad_Project/Instr_Mem.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/git-learning/RISC_32I/Main_Dec.v'; using path 'C:/Users/alah/Desktop/Work/Verilog_Work/Grad_Project/Main_Dec.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/git-learning/RISC_32I/Next_PC_Logic.v'; using path 'C:/Users/alah/Desktop/Work/Verilog_Work/Grad_Project/Next_PC_Logic.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/git-learning/RISC_32I/PC_Reg.v'; using path 'C:/Users/alah/Desktop/Work/Verilog_Work/Grad_Project/PC_Reg.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/git-learning/RISC_32I/PC_Unit.v'; using path 'C:/Users/alah/Desktop/Work/Verilog_Work/Grad_Project/PC_Unit.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/git-learning/RISC_32I/Reg_File.v'; using path 'C:/Users/alah/Desktop/Work/Verilog_Work/Grad_Project/Reg_File.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/git-learning/RISC_32I/Sign_Extend.v'; using path 'C:/Users/alah/Desktop/Work/Verilog_Work/Grad_Project/Sign_Extend.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/git-learning/RISC_32I/RISC_Top.v'; using path 'C:/Users/alah/Desktop/Work/Verilog_Work/Grad_Project/RISC_Top.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/git-learning/RISC_32I/ALU_TB.v'; using path 'C:/Users/alah/Desktop/Work/Verilog_Work/Grad_Project/ALU_TB.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/git-learning/RISC_32I/Constraints_basys3.xdc'; using path 'C:/Users/alah/Desktop/Work/Verilog_Work/Grad_Project/Constraints_basys3.xdc' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+INFO: [filemgmt 56-1] IPUserFilesDir: Directory not found as 'F:/git-learning/RISC_32I/FPGA_Implementation/RISC_V.ip_user_files'; using path 'C:/Users/alah/Desktop/Work/Verilog_Work/Grad_Project/RISC_V/RISC_V.ip_user_files' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 874.582 ; gain = 100.426
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 30 18:31:11 2025...
