@@ -129,5 +129,5 @@ Electronics and Communications Engineering, Cairo University
 
 ## 📌 Notes  
 
-- This project was part of our **Self-learning Journey** 
+- This project was part of my **Self-learning Journey** 
 - It will be continously updated to exlore pipelined and multi-cycle implementations in the future. 
